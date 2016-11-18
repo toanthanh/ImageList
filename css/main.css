@@ -98,17 +98,16 @@ ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 li {
-    display: inline-block;
-    margin: auto;
-    width: 33.33%;
+    /* width: 33.33%; */
 }
 
 figure {
     margin: .5em;
-    position: relative
+    position: relative;
 }
 
 figure img {
@@ -124,6 +123,7 @@ figure:hover > figcaption {
     position: absolute;
     top: 0px;
     width: 100%;
+    background-color: rgba(255,255,255,0.7);
 }
 
 figcaption h3 {
@@ -144,19 +144,17 @@ aside {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 669px) {
     body {
         max-width: 60em;
         margin: auto;
     }
 
     main {
-        display: inline-block;
         width: 80%;
     }
 
     aside {
-        display: inline-block;
         width: 20%;
     }
 
